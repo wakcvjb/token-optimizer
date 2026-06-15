@@ -1,42 +1,15 @@
 # TokenOptimizer
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Java](https://img.shields.io/badge/Java-11%2B-orange.svg)](https://www.oracle.com/java/)
+轻量级 Java 工具，用于优化 LLM Token 消耗。
 
-A lightweight Java utility for optimizing LLM token usage.
+## 功能
 
-## Quick Start
+- 估算 Token 数量
+- 压缩对话历史
+- 预算优化
+- 结构化 JSON 输出
 
-```bash
-git clone https://github.com/wakcvjb/token-optimizer.git
-cd token-optimizer
-javac TokenOptimizer.java
-java TokenOptimizer
+## 使用方法
 
----
-
-## 第四步：创建 LICENSE
-
-```bash
-cat > LICENSE << 'EOF'
-MIT License
-
-Copyright (c) 2026 wakcvjb
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+```java
+TokenOptimizer.estimateTokenCount("Hello world");
