@@ -1,0 +1,11 @@
+*.class
+*.jar
+*.log
+.DS_Store
+*.iml
+.settings/
+.project
+.classpath
+bin/
+build/
+dist/
